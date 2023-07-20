@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: getting-started-with-swagger
+  datasource:
+    url: jdbc:h2:mem:posts
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        trace: false
+        web-allow-others: false
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  error:
+    include-exception: true         # include the exception class
+    include-message: always         # include the exception message
+    include-binding-errors: always  # include the binding errors
+    include-stacktrace: never       # include the stacktrace information
+    whitelabel:
+      enabled: false
+debug: false
+logging:
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+  file:
+    name: application.debug.log
+  pattern:
+    console: "%-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    org.springframework.web: WARN
+    org.hibernate.SQL: TRACE
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    in.stackroute.ust: DEBUG

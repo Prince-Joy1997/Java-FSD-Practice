@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dab106d9-8bc6-4b77-b56a-89538f75157f" name="Changes" comment="Added Rest.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authors-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authors-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-service/src/main/java/com/ust/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/books-service/src/main/java/com/ust/books/controller/BookController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Qs7tA5uF9jxuIM4mMN3FypyWBh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ust/microservices/library-microservice/gateway-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ust.books.domain" />
+      <recent name="com.ust.authors.service" />
+      <recent name="com.ust.authors.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ust\microservices\library-microservice\gateway-service\src\main\resources" />
+      <recent name="D:\ust\microservices\library-microservice\discovery-service\src\main\resources" />
+      <recent name="D:\ust\microservices\library-microservice\books-service\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.ust.books.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ust.discovery.Main" />
+      <module name="discovery-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ust.discovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ust.authors.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ust.authors.Main" />
+      <module name="authors-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ust.authors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ust.books.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ust.books.Main" />
+      <module name="books-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ust.books.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.com.ust.authors.Main" />
+      <item itemvalue="Application.com.ust.books.Main" />
+      <item itemvalue="Maven.authors-service" />
+      <item itemvalue="Maven.discovery-service" />
+      <item itemvalue="Maven.books-service" />
+      <item itemvalue="Maven.gateway-service" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.ust.books.Main" />
+        <item itemvalue="Application.com.ust.authors.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab106d9-8bc6-4b77-b56a-89538f75157f" name="Changes" comment="" />
+      <created>1686118446465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686118446465</updated>
+      <workItem from="1686118447757" duration="5369000" />
+    </task>
+    <task id="LOCAL-00001" summary="Code challenge.&#10;Library microservice application revision 1">
+      <created>1686123096907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686123096907</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Partially Added">
+      <created>1686136941509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686136941509</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Rest.">
+      <created>1686139282709</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686139282709</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Code challenge.&#10;Library microservice application revision 1" />
+    <MESSAGE value="Partially Added" />
+    <MESSAGE value="Added Rest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Rest." />
+  </component>
+</project>

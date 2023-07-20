@@ -1,0 +1,14 @@
+.main{
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-top: 10rem;
+    padding-bottom: 1rem;
+}
+p{
+    margin-top: 12px;
+    margin-bottom: -8px;
+}

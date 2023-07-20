@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@400;600;900&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Lightgray: hsl(212, 45%, 89%);
+--Grayishblue: hsl(220, 15%, 55%);
+--Darkblue: hsl(218, 44%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--Lightgray);
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px;
+    background-color: var(--White);
+    border-radius: 18px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    border-radius: 15px;
+    height: 18rem;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--Grayishblue);
+}

@@ -1,0 +1,73 @@
+
+main{
+  background-color: rgb(255, 116, 92);
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  width: 22px;
+  height: 22px;
+  margin-block: 14px;
+}
+.headinglogo{
+  margin-left: 9px;
+  color: white;
+}
+
+.heading1{
+  margin-top: 1px;
+  font-weight: bolder;
+  font-size: 37px;
+}
+
+
+:root{
+  display: flexbox;
+}
+
+.title{
+  margin-top: 23px;
+  margin-left: 14px;
+  color: aliceblue;
+}
+.place{
+  display: flex;
+  margin-inline: 14rem;
+  margin-block: 2rem;
+}
+p{
+  margin-top: 23px;
+  margin-left: 14px;
+  color: black;
+}
+.pic{
+  width: 12rem;
+  height: 16rem;
+  border-radius: 12px;
+}
+.locationicon{
+  width: 23px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  margin-block: 15px;
+}
+.country{
+  padding-left: 12px;
+  display: flex;
+}
+.heading{
+  margin-top: 1px;
+  font-weight: bolder;
+  font-size: 37px;
+}
+.maps{
+  color: rgb(148, 148, 148);
+  text-decoration: underline;
+  font-size: 13px;
+}
+.date{
+  font-weight: bolder;
+}

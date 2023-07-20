@@ -1,0 +1,24 @@
+.content{
+    margin-left: 15rem;
+}
+
+button{
+    border-radius: 9px;
+    border: 1px solid black;
+    width: 7rem;
+    height: 7rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+h1{
+    color:rgb(33,53,71);
+}
+/* button:hover{
+    background-color: rgb(33,53,71);
+    color: rgb(237, 5, 5);
+} */
+.block{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap:2rem;
+}

@@ -1,0 +1,56 @@
+
+<!-- <body>
+  <router-outlet></router-outlet>
+  <app-sidebar></app-sidebar>
+
+  <div id="about-area">
+    <div class="container">
+      <img class="img-fluid" src="assets/banner3.png" alt="welcome">
+          </div>
+        </div>
+
+</body> -->
+
+<section class="main">
+
+<mat-card class="card">Job Applicants List</mat-card>
+
+<section>
+  <div>
+    <table mat-table [dataSource]="seekerList" class="mat-elevation-z8">
+
+      <!-- first Column -->
+      <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef> First Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+      </ng-container>
+     <!-- last Column -->
+      <ng-container matColumnDef="lastName">
+        <th mat-header-cell *matHeaderCellDef> Last Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+      </ng-container>
+      <!-- email Column -->
+      <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Email </th>
+          <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
+        <!-- Address Column -->
+      <ng-container matColumnDef="address">
+        <th mat-header-cell *matHeaderCellDef> Address </th>
+        <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+      </ng-container>
+      <!-- Phone Number Column -->
+      <ng-container matColumnDef="phoneNumber">
+        <th mat-header-cell *matHeaderCellDef> Phone Number </th>
+        <td mat-cell *matCellDef="let element"> {{element.phoneNumber}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
+</section>
+
+</section>
+

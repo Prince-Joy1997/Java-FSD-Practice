@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Playfair+Display:wght@400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.learn-to-code{
+  background-color: black;
+  height: 80vh;
+}
+.heading{
+    color: #ffff !important;
+    font-weight: 500;
+    font-size: 4rem;
+    /* margin: 5rem 0 0 0; */
+    padding-top: 7rem;
+}
+
+.sub-title{
+    color: plum;
+    font-size: 23px;
+}
+
+.link{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.5rem;
+}
+
+.link:hover{
+    color: forestgreen;
+    text-decoration: underline;
+}

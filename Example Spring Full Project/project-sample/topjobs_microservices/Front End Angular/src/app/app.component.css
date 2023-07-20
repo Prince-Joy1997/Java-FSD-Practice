@@ -1,0 +1,25 @@
+body{ 
+    height:100vh;
+    margin:0;
+    display:flex; 
+    flex-direction:column; 
+    
+}
+
+.routerBG{
+     background-image: url(../assets/banner2.png);
+/* 
+    background-repeat: repeat-y; */
+    background-attachment: fixed;
+    background-size: contain;
+
+}
+
+app-footer{
+    margin-top:auto;
+    min-height:50px;
+}
+
+app-header{
+    min-height:50px;
+}

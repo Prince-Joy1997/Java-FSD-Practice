@@ -1,0 +1,14 @@
+server: 
+  port: 8082
+spring: 
+  application:
+    name: "EmployerAPP"
+  mvc: 
+    pathmatch: 
+      matching-strategy: ant-path-matcher
+  data: 
+    mongodb: 
+#      database: topjobsdb
+#      host: ${MONGO_HOST}
+#      port: ${MONGO_PORT}
+      uri: ${MONGO_URL}

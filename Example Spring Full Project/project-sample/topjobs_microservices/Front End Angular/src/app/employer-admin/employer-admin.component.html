@@ -1,0 +1,68 @@
+
+<section class="main">
+<mat-card class="card">Companies List</mat-card>
+
+<table mat-table [dataSource]="employerExample" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Company Name Column -->
+  <ng-container matColumnDef="companyName">
+    <th id="company" mat-header-cell *matHeaderCellDef> Company Name </th>
+    <td mat-cell *matCellDef="let company">{{company.companyName}} </td>
+  </ng-container>
+
+  <!-- First Name Column -->
+  <ng-container matColumnDef="firstname">
+    <th id="companyfirstname" mat-header-cell *matHeaderCellDef> First Name </th>
+    <td mat-cell *matCellDef="let company"> {{company.firstname}} </td>
+  </ng-container>
+
+  <!-- Last Name Column -->
+  <ng-container matColumnDef="lastname">
+    <th id="companylastname" mat-header-cell *matHeaderCellDef> Last Name </th>
+    <td mat-cell *matCellDef="let company"> {{company.lastname}} </td>
+  </ng-container>
+
+  <!-- Email Column -->
+  <ng-container matColumnDef="email">
+    <th id="companyemail" mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let company"> {{company.email}} </td>
+  </ng-container>
+
+  <!-- Phone Column -->
+  <ng-container matColumnDef="phoneNumber">
+    <th id="companyphone" mat-header-cell *matHeaderCellDef> Phone No. </th>
+    <td mat-cell *matCellDef="let company"> {{company.phoneNumber}} </td>
+  </ng-container>
+
+  <!-- Address Column -->
+  <ng-container matColumnDef="address">
+    <th id="companyaddress" mat-header-cell *matHeaderCellDef> Address </th>
+    <td mat-cell *matCellDef="let company"> {{company.address}} </td>
+  </ng-container>
+
+  <!--  Account Status Column -->
+  <ng-container matColumnDef="accountStatus">
+    <th id="companystatus" mat-header-cell *matHeaderCellDef> Status </th>
+    <td mat-cell *matCellDef="let company"> {{company.accountStatus}}
+      <!-- <option  value="true">Open</option>
+      <option  value="false">Closed</option> -->
+    </ng-container>
+
+
+
+  <!-- Change Status -->
+   <ng-container matColumnDef="changeStatus">
+    <th mat-header-cell *matHeaderCellDef> Change Status  </th>
+    <td mat-cell *matCellDef="let element">
+      <button class="btn" mat-raised-button color="primary" (click)="changeStatus(element)">Change Status</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</section>

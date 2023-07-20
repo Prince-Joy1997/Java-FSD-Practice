@@ -1,0 +1,8 @@
+# IntelliJ
+out/
+target/
+.idea/
+*.iml
+
+
+test.sh

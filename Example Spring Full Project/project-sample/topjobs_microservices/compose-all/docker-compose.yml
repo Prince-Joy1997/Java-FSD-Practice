@@ -1,0 +1,72 @@
+version: '3'
+
+services:
+  mysqldb:
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: dockersqlpassword
+      MYSQL_HOST: localhost
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_URL: mongodb://localhost:27017/samplemongodb
+  eurekaservice:
+    image: ankhan/eureka
+    network_mode: host
+    restart: always
+    ports:
+      - 8761:8761
+  gatewayservice:
+    image: ankhan/gateway
+    network_mode: host
+    depends_on:
+      - mysqldb
+      - mongodb
+      - eurekaservice
+      - authenticationservice
+      - jobseekerservice
+      - jobservice
+      - employerservice
+    restart: always
+    ports:
+      - 9010:9010
+  authenticationservice:
+    image: ankhan/authentication
+    network_mode: host
+    depends_on:
+      - mysqldb
+      - eurekaservice
+    restart: always
+    ports:
+      - 9000:9000
+  jobseekerservice:
+    image: ankhan/jobseeker
+    network_mode: host
+    depends_on:
+      - mongodb
+      - eurekaservice
+    restart: always
+    ports:
+      - 8083:8083
+  jobservice:
+    image: ankhan/job
+    network_mode: host
+    depends_on:
+      - mongodb
+      - eurekaservice
+    restart: always
+    ports:
+      - 9096:9096
+  employerservice:
+    image: ankhan/employer
+    network_mode: host
+    depends_on:
+      - mongodb
+      - eurekaservice
+    restart: always
+    ports:
+      - 8082:8082

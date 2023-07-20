@@ -1,0 +1,41 @@
+body{
+    border: solid #999 1px;
+    border-radius: 15px;
+    width: 85%;
+    margin: 7rem;
+}
+
+table {
+    
+    border-radius: 7px;
+    width: 100%;
+}
+
+caption{
+    padding: 1rem;
+    border-bottom: solid 1px ;
+}
+  
+#row:nth-child(odd) {
+    background-color: #eee;
+}
+
+#num{
+    text-align: right;
+}
+
+#text{
+    text-align: left;
+}
+
+#head{
+    padding: 0.3rem;
+}
+
+#top{
+    vertical-align: text-top;
+}
+
+#foot{
+    border-top: solid 1px black;
+}

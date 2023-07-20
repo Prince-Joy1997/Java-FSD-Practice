@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{data.idata.firstName}} &nbsp; {{data.idata.lastName}}</h1>
+<div mat-dialog-content>
+
+
+    <div mat-dialog-content>{{data.idata.resume}}</div>
+    <!-- <textarea matInput readonly="true"  [(ngModel)]="data.idata.resume" class="area"></textarea> -->
+
+</div>
+<div mat-dialog-actions>
+
+  <button mat-button [mat-dialog-close]="data.idata" cdkFocusInitial>Ok</button>
+</div>

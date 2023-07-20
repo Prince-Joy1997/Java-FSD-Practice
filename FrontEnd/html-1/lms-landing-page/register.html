@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet"
+          href="./css/form.css">
+</head>
+
+<body>
+    <main class="container">
+        <form class="form">
+            <h1>Register for a new account</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text"
+                       required
+                       class="form-input"
+                       name="username"
+                       id="username"
+                       autocomplete="off"
+                       placeholder="Provide your username" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password"
+                       required
+                       minlength="6"
+                       class="form-input"
+                       name="password"
+                       id="password"
+                       placeholder="Provide your password" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email"
+                       required
+                       class="form-input"
+                       name="email"
+                       id="email"
+                       placeholder="Please provide your email" />
+            </div>
+            <div class="form-group">
+                <label for="dateOfBirth">Date Of Birth</label>
+                <input type="date"
+                       class="form-input"
+                       id="dateOfBirth"
+                       name="dateOfBirth" />
+            </div>
+            <div class="form-group-radio w-50 left">
+                <label for="isExperienced">Are you a Fresher?</label>
+                Yes: <input type="radio"
+                       class="form-input-radio"
+                       name="isExperienced"
+                       id="isExperienced"
+                       value="Yes" />
+                No: <input type="radio"
+                       class="form-input-radio"
+                       name="isExperienced"
+                       id="isExperienced"
+                       value="No" />
+            </div>
+            <div class="form-group-radio w-50 right">
+                <label for="gender">Gender</label>
+                Male: <input type="radio"
+                       class="form-input-radio"
+                       name="gender"
+                       id="gender"
+                       value="Male" />
+                Female: <input type="radio"
+                       class="form-input-radio"
+                       name="gender"
+                       id="gender"
+                       value="Female" />
+            </div>
+            <div class="clear"></div>
+            <div class="form-group-radio">
+                <label for="technologies">Technologies you intrested in:</label>
+                Java <input type="checkbox"
+                       class="form-input-radio"
+                       name="technologies"
+                       id="technologies"
+                       value="Java" />
+
+                Python<input type="checkbox"
+                       class="form-input-radio"
+                       name="technologies"
+                       id="technologies"
+                       value="Python" />
+
+                C++<input type="checkbox"
+                       class="form-input-radio"
+                       name="technologies"
+                       id="technologies"
+                       value="C++" />
+
+            </div>
+            <div class="form-group">
+                <label for="about">About yourself</label>
+                <textarea name="about"
+                          id="about"
+                          cols="30"
+                          rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="subscription">Select a subscription period</label>
+                <select name="subscription"
+                        id="subscription"
+                        class="form-input">
+                    <option value="1">1 Month</option>
+                    <option value="3">3 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="12">12 Months</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+
+</html>

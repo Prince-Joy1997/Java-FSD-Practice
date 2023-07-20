@@ -1,0 +1,68 @@
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5;
+    width: 70%;
+    border: 2px solid #ddd;
+    margin-inline-start: 12rem;
+    margin-block-start: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card{
+  border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5;
+    width: 70%;
+    border: 2px solid #ddd;
+    margin-inline-start: 12rem;
+    margin-block-start: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: #1f2a38;
+    color: #ddd;
+}
+caption{
+    font-size: 1.5rem;
+}
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+
+th{
+  font-weight: bold;
+  color: #1f2a38;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.btn {
+  text-align: right;
+  margin-right: 10px;
+  background-color: #353D41;
+  color: white;
+  width: auto;
+  height: auto;
+}
+
+.main{
+  /* background-image: url(../../assets/banner2.png); */
+  padding: 20px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+

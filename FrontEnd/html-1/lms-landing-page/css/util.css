@@ -1,0 +1,31 @@
+/* utility classes */
+.h-70vh {
+    height: 70vh;
+}
+
+.h-50vh {
+    height: 50vh;
+}
+
+.b-solid-black-1 {
+    border: 1px solid black;
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-light-pink {
+    color: var(--light-pink);
+}
+
+.text-center {
+    text-align: center;
+}
+.clear{
+    clear: both;
+}

@@ -1,0 +1,24 @@
+.left {
+    width: 50%;
+    float: left;
+    padding: 1.5rem;
+}
+
+.right {
+    width: 50%;
+    float: right;
+    padding: 1.5rem;
+}
+
+.btn-link {
+    display: inline-block;
+    width: 225px;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    margin-block: 12px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    background-color: rgb(220, 220, 108);
+    border-top-right-radius: 36px;
+    border-bottom-left-radius: 36px;
+}

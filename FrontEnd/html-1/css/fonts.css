@@ -1,0 +1,26 @@
+:root{
+    font-size: 20px;
+}
+#em-1{
+    border: 3px solid #ec2b08;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+
+#em-2{
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+#rem-1{
+    border: 3px solid dodgerblue;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+#rem-2{
+    margin-left: 20px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,36 @@
+.nav {
+    width: 100%;
+}
+
+.nav-container{
+    padding: 1rem;
+}
+
+.left-nav {
+    float: left;
+    width: 70%;
+}
+
+.right-nav {
+    float: right;
+    width: 30%;
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+    width: 128px;
+    height: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+    color: forestgreen;
+    font-weight: 500;
+}

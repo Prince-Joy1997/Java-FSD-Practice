@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=Mulish:wght@400;500;700&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@400;600;900&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.main{
+    margin: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .signUp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+} */
+
+@media screen and (min-width: 300px) {
+    
+    .main{
+        background-color: honeydew;
+    }
+    
+    .content{
+        font-family: 'Times New Roman', Times, serif;
+        align-content: flex-start;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width:600px) {
+    .main{
+        background-color: gainsboro;
+    }
+    
+    .content{
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: flex-start;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:900){
+    .main{
+        background-color: honeydew;
+    }
+    
+    .content{
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        justify-content: flex-start;
+    }
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+/* header - learn to code */
+.learn-to-code {
+    background-color: var(--bluesih-black) !important;
+    padding: 4rem;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.sub-title {
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+.click-me {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+a.click-me:hover {
+    color: rgb(11, 118, 11);
+    text-decoration: underline;
+}
+
+/* section - html-section */
+.html-section {
+    background-color: var(--pale-green) !important;
+    text-align: center;
+    padding: 4rem;
+}

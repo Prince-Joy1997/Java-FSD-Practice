@@ -1,0 +1,17 @@
+{
+  "name": "strings",
+  "version": "1.0.0",
+  "description": "To Check the two strings are equal. ",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon index.js"
+  },
+  "author": "prince",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

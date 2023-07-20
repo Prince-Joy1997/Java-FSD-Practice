@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=Playfair+Display:wght@400;500;900&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --lightCyan: hsl(179, 65%, 65%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --white: #ffff;
+    font-family: 'Karla';
+    /* font-size: 400, 700; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--LightGray);
+    /* padding-top: 2rem; */
+
+}
+
+.out {
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0 20px 30px -10px rgb(38, 57, 77);
+
+}
+
+.header {
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+.heading {
+    color: var(--Cyan);
+}
+
+.sub-heading {
+    color: var(--BrightYellow);
+}
+
+.para {
+    color: var(--GrayishBlue);
+}
+
+.left {
+    float: left;
+    width: 50%;
+    background-color: var(--Cyan);
+    height: 40vh; 
+}
+
+.left > h2{
+    padding-left: 5rem;
+}
+
+.left > p{
+    padding-left: 5rem;
+}
+
+.left > button{
+    margin-left: 5rem;
+    background-color: var(--BrightYellow);
+    border-radius: 6px;
+    border: none;
+    padding-left: 8rem;
+    padding-right: 9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    background-color: var(--lightCyan);
+    color: var(--white);
+    height: 40vh;
+}
+
+.right > h2{
+    padding-left: 5rem;
+}
+
+.right > p{
+    padding-left: 5rem;
+    color: var(--LightGray);
+}
+
+.head2 {
+    color: var(--white);
+}
+
+.rate {
+    color: var(--white);
+    font-size: 2rem;
+    display: inline;
+}
+
+.month {
+    color: var(--lightCyan);
+    display: inline;
+}
+
+.details {
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+
+
+.btn>a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer{
+    color: var(--white);
+}

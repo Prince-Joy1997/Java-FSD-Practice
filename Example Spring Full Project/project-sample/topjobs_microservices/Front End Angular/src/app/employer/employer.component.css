@@ -1,0 +1,143 @@
+/* table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    border: 2px solid #ddd;
+    margin-inline-start: 12rem;
+    margin-block-start: 3rem;
+} */
+.maindiv{
+    height: 100%;
+    min-height: 100vh;
+  }
+
+.message{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    color: white;
+}
+
+.clsmainsection{
+
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+
+   
+}
+.searchsection{
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.example-full-width {
+  width: 70%;
+}
+.clsform
+{
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin: auto;
+}
+
+.clsSearchBarDiv {
+    width: 70%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+
+    /*change color of label*/
+    color: #1f2a38 !important;
+}
+
+::ng-deep .mat-form-field-underline {
+
+    /*change color of underline*/
+ 
+    background-color: #1f2a38 !important;;
+}
+::ng-deep .mat-form-field-ripple  {
+
+    /*change color of underline when focused*/
+    background-color: #1f2a38 !important;
+
+}
+
+
+.clsSearchBar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.clsmat
+{
+    width: 50vw;
+    /* height: 300px; */
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+    width: 70%;
+    border: 2px solid #ddd;
+    margin-inline-start: 12rem;
+    margin-block-start: 3rem;
+    margin-right: auto;
+    margin-left: auto;  
+
+}
+
+.btncolor{
+    background-color: #1f2a38;
+    color: white;
+    position: relative;
+}
+caption{
+    font-size: 1.5rem;
+}
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.card{
+    border-collapse: collapse;
+      border-spacing: 0;
+      border-radius: 5;
+      width: 70%;
+      border: 2px solid #ddd;
+      margin-inline-start: 12rem;
+      margin-block-start: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: large;
+      background-color: #1f2a38;
+      color: #ddd;
+  }
+  
+  .empsection{
+      margin-bottom: 40px;
+  }

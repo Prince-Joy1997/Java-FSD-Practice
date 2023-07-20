@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=League+Spartan:wght@500;600;700&family=Montserrat:wght@400;500;600&family=Mulish:wght@400;500;700&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@400;600;900&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+  color-scheme: light dark;
+  color: rgba(10, 10, 10, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#features{
+  border: #213547 1px solid;
+  padding-left: 2rem;
+  border-radius: 8px;
+  background-color: rgb(226, 233, 239);
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

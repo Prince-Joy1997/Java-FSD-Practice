@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    margin-top: 22rem;
+    margin-left: 36rem;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#hex{
+    margin-left: 1rem;
+}
+#rgbtxt, #hextxt{
+    font-weight: 900;
+}

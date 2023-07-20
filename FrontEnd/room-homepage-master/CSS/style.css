@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=League+Spartan:wght@500;600;700&family=Mulish:wght@400;500;700&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@400;600;900&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+:root{
+--DarkGray: hsl(0, 0%, 63%);
+--Black: hsl(0, 0%, 0%);
+--White: hsl(0, 0%, 100%);
+--VeryDarkGray: hsl(0, 0%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+.room{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+}
+
+.upper-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.lower{
+    display: flex;
+    flex-direction: row;
+}
+
+
+nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-block: 4rem;
+    margin-inline: 6rem;
+}
+
+.room-logo{
+    margin-right: 3rem;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav > li{
+    margin-inline: 18px;
+}
+
+.lower{
+    display: flex;
+    flex-direction: row;
+}

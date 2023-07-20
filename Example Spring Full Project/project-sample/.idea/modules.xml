@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/topjobs_microservices/Employer/Employer.iml" filepath="$PROJECT_DIR$/topjobs_microservices/Employer/Employer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topjobs_microservices/JobSeeker/JobSeeker.iml" filepath="$PROJECT_DIR$/topjobs_microservices/JobSeeker/JobSeeker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topjobs_microservices/TopjobsParent.iml" filepath="$PROJECT_DIR$/topjobs_microservices/TopjobsParent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topjobs_microservices/authenticator_service/authenticator_service.iml" filepath="$PROJECT_DIR$/topjobs_microservices/authenticator_service/authenticator_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topjobs_microservices/jobservice/job/job.iml" filepath="$PROJECT_DIR$/topjobs_microservices/jobservice/job/job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/project-sample.iml" filepath="$PROJECT_DIR$/.idea/project-sample.iml" />
+    </modules>
+  </component>
+</project>

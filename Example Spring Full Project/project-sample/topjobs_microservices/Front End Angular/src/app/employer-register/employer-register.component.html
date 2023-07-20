@@ -1,0 +1,83 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="mat-elevation-z5">
+    <img mat-card-image class="img" src="assets/images/logo3.png" alt="logo">
+    <mat-card-header>
+      <mat-card-title>Sign up</mat-card-title>
+    </mat-card-header>
+
+
+    <form name="EmployerSignupForm" >
+
+      <mat-card-content>
+        <div class="info-container">
+        <mat-form-field class="outline">
+          <input matInput type="text" id="inputName" name="employerUsername" [formControl]="username"
+            placeholder="Enter username" (keydown)="Space($event)" required>
+            <small *ngIf="username.invalid && username.touched" class="text-danger">User name is Required</small> 
+          <mat-icon matSuffix>portrait</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="outline">
+          <input matInput [type]="hide ? 'password' : 'text'" id="inputPassword" name="employerPass"
+            [formControl]="password" placeholder="Enter Password" (keydown)="Space($event)" required>
+            <small *ngIf="password.invalid && password.touched" class="text-danger">Password is Required</small> 
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon matSuffix>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        </div>
+        <div class="name-container">
+          <mat-form-field class="outline">
+            <input matInput type="text" id="inputFirstName" name="employerFirstname" [formControl]="firstname"
+              placeholder="Enter First name" (keydown)="Space($event)" required>
+              <small *ngIf="firstname.invalid && firstname.touched" class="text-danger">First name is Required</small> 
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="outline">
+            <input matInput type="text" id="inputLastName" name="employerLastname" [formControl]="lastname"
+              placeholder="Enter Last name" (keydown)="Space($event)" required>
+              <small *ngIf="lastname.invalid && lastname.touched" class="text-danger">Last name is Required</small> 
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+        </div>
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" id="inputcompanyname" name="employerCompany" [formControl]="companyName"
+            placeholder="Enter Company name" (keydown)="Space($event)" required>
+            <small *ngIf="companyName.invalid && companyName.touched" class="text-danger">Company name is Required</small> 
+          <mat-icon matSuffix>work</mat-icon>
+        </mat-form-field>
+        <div class="info-container">
+          <mat-form-field class="outline">
+            <input matInput type="text" id="inputEmail" name="employerEmail" [formControl]="email" type="email"
+              placeholder="Enter email" (keydown)="Space($event)" required>
+              <small *ngIf="email.invalid && email.touched" class="text-danger">Email is Required</small>
+            <mat-icon matSuffix> email</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="outline">
+            <input matInput type="text" id="inputPhonenumber" name="employerPhone" [formControl]="phoneNumber"
+              placeholder="Enter Phone number" (keydown)="Space($event)" required>
+              <small *ngIf="phoneNumber.invalid && phoneNumber.touched" class="text-danger">Phone number is Required(length 10, numbers are only allowed)</small>
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
+        </div>
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" id="inputAddress" name="employerAddr" [formControl]="address"
+            placeholder="Enter Address" (keydown)="Space($event)" required>
+            <small *ngIf="address.invalid && address.touched" class="text-danger">Address is Required</small> 
+          <mat-icon matSuffix>create</mat-icon>
+        </mat-form-field>
+
+
+      </mat-card-content>
+      <button id="signUpbtn" (click)="signUp()" class="btn btn-default btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Sign up
+      </button> &nbsp; &nbsp;
+    </form>
+    <p>
+      <a routerLink="/login"> Already a member? Click to Sign in!</a>
+    </p>
+    <a routerLink="/signup"> Are you a jobseeker, please click the link to Sign up</a>
+
+
+  </mat-card>
+</div>

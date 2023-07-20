@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=League+Spartan:wght@500;600;700&family=Montserrat:wght@400;500;600&family=Mulish:wght@400;500;700&family=Noto+Sans:wght@800&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@400;600;900&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Mono:wght@400;500;600&family=Rubik+Puddles&display=swap');
+
+main{
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    height: 100vh;
+  }
+
+.rps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+  .options {
+    display: flex;
+    gap: 80px;
+  }
+  
+  button {
+
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  button:hover{
+      box-shadow: 0 2px 12px rgb(223, 172, 4);
+  }
+  
+  .scores {
+    display: flex;
+    gap: 13rem;
+    margin-top: 20px;
+  }
+  
+  .user, .computer, .draw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 54px;
+    margin-bottom: 8vh;
+    background-image: linear-gradient(to left, #cd6913, #ffef13);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  span {
+    font-size: 24px;
+  }
+
+  .message{
+    padding-top: 5rem;
+  }

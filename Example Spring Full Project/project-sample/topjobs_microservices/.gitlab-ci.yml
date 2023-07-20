@@ -1,0 +1,28 @@
+image: 'maven:3-jdk-11'
+stages:
+ - test
+ - build
+services:
+  - 'mysql:5.5'
+  - 'mongo:3.4-jessie'
+variables:
+  MYSQL_DATABASE: "topjobauthenticatordb"
+  MYSQL_URL: "jdbc:mysql://mysql/topjobauthenticatordb?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true"
+  MYSQL_USER: "app_root"
+  MYSQL_PASSWORD: "root"
+  MYSQL_ROOT_PASSWORD: "root"
+  MONGO_DATABASE: "topjobsdb"
+  MONGO_URL: "mongodb://mongo/topjobsdb"
+cache:
+  paths:
+    - .m2/repository
+    - target
+maven-test:
+ stage: test
+ script: "mvn test -e"
+maven-build:
+ stage: build
+ script: "mvn package"
+ artifacts:
+  paths:
+   - target/*.jar

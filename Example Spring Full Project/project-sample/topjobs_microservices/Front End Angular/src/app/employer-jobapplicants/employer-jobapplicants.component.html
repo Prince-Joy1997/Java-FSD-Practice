@@ -1,0 +1,13 @@
+<p>here search bar</p>
+<section class="sectionclass">
+    <article class="ButtonGroup">
+        <button class="button" (click)="ViewAllJobApplicants()" mat-raised-button color="primary">View All Job Applicants</button>
+        <button class="button" (click)="ViewSelctedJobApplicants()" mat-raised-button color="primary">View Selected Job Applicants</button>
+        <button class="button" (click)="ViewRejectedJobApplicants()" mat-raised-button color="primary">View Rejected Job Applicants</button>
+    </article>
+ 
+    <article class="RouterGroup">
+        <router-outlet></router-outlet>
+    </article>
+</section>
+

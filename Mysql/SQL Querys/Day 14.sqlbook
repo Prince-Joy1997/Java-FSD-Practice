@@ -1,0 +1,29 @@
+-- SQLBook: Code
+DESC employees;
+SELECT emp_no, CONCAT_WS('-',first_name,last_name) 'Full Name' from employees;
+
+SELECT CONCAT(first_name,' ',last_name, ' with Id ', emp_no, ' was born on ',hire_date ) 'Employee Description' FROM employees where emp_no = 10001;
+
+SELECT *from employees where LENGTH(first_name) = LENGTH(last_name) limit 20;
+
+SELECT *from employees where EXTRACT(YEAR FROM hire_date) = 1989 AND EXTRACT(MONTH FROM hire_date) = 6;
+
+SELECT CONCAT(first_name,' ',last_name, ' with Id ', emp_no, ' was hired on ', DATE_FORMAT(hire_date,'%a %D %b %Y')) 'Employee Description' FROM employees where emp_no = 10001;
+
+SELECT *from employees WHERE DATE_ADD(birth_date,INTERVAL 25 YEAR) = hire_date;
+
+SELECT *FROM employees where EXTRACT(MONTH from birth_date) = EXTRACT(MONTH from hire_date);
+
+SELECT *FROM employees e1 JOIN employees e2 ON e1.first_name = e2.first_name AND MONTH(e1.hire_date) = MONTH(e2.hire_date) 
+WHERE e1.gender = 'M' AND e2.gender = 'F' limit 20;
+
+USE employees;
+
+
+
+-- SQLBook: Code
+DELIMITER $$ CREATE Procedure GET_EMP_DETAILS()BEGIN SELECT emp_no, CONCAT_WS('-',first_name,last_name) 'Full Name' from employees LIMIT 30; END$$ DELIMITER;
+CALL GET_EMP_DETAILS();
+-- SQLBook: Code
+DELIMITER $$ CREATE Procedure GET_EMP_DETAILS_BY_DEPT(IN DEPT_NO CHAR(4))BEGIN SELECT emp_no, CONCAT_WS('-',first_name,last_name) 'Full Name', DEPT_NAME from employees JOIN DEPT_EMP D USING (EMP_NO) JOIN DEPARTMENTS DS USING (DEPT_NO) WHERE D.DEPT_NO = DEPT_NO LIMIT 30; END$$ DELIMITER;
+CALL GET_EMP_DETAILS_BY_DEPT("d009");

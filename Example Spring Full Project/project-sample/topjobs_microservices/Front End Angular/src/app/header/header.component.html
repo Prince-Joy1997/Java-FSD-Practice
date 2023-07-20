@@ -1,0 +1,73 @@
+
+<header>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark" >
+      <div class="container-fluid">
+      <a routerLink="/home" class="navbar-brand mb-0 h1">
+          <img id="logo"
+          class = "d-inline-block aligh-top"
+          src="assets/logoHeader3.png" />
+      </a>
+      <button class="loginBut"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      class="navbar-toggler"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse justify-content-between"
+      id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a routerLink="/home" class="nav-link active">
+                Home
+            </a>
+        </li>
+          <li class="nav-item active">
+              <a *ngIf="displayemployer" routerLink="/employer" class="nav-link active">
+                  Job Postings
+              </a>
+          </li>
+          <li class="nav-item active">
+              <a *ngIf="displayjobseeker" routerLink="/jobseeker" class="nav-link active">
+                  Job Postings
+              </a>
+          </li>
+          <li class="nav-item active">
+            <a *ngIf="displayjobseeker" routerLink="/jobseekerappliedjobs" class="nav-link active">
+                Applied Jobs
+            </a>
+        </li>
+          <li class="nav-item active">
+            <a *ngIf="displayadmin" routerLink="/employerAdmin" class="nav-link active">
+                Employers
+            </a>
+        </li>
+        <li class="nav-item active">
+          <a *ngIf="displayadmin" routerLink="/jobSeekerAdmin" class="nav-link active">
+              Job Applicants
+          </a>
+      </li>
+      </ul>
+      <ul class="navbar-nav active">
+        <li>
+            <a  *ngIf = "displaylogout">
+                <button id="logout" (click)="onLogOut()" class="GFG">
+                    Log out
+                </button>
+            </a>
+        </li>
+        <li>
+            <a  *ngIf = "displaylogin" routerLink='/login'>
+                <button id="login"(click)="onLogIn()" class="GFG">
+                Log In
+                </button>
+            </a>
+        </li>
+      </ul>
+  </div>
+      </div>
+  </nav>
+</header>

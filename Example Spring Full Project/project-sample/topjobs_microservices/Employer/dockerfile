@@ -1,0 +1,10 @@
+FROM openjdk:11
+
+WORKDIR usr/src
+
+ADD ./target/Employer-0.0.1-SNAPSHOT.jar /usr/src/Employer-0.0.1-SNAPSHOT.jar
+
+ENV MONGO_HOST=localhost
+ENV MONGO_PORT=27017
+
+ENTRYPOINT ["java","-jar","Employer-0.0.1-SNAPSHOT.jar"]

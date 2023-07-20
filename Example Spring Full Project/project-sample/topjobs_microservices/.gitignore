@@ -1,0 +1,56 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+target/
+logs
+pom.xml.tag
+pom.xml.next
+release.properties
+*.jar
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/Front End Angular/node_modules
+/Front End Angular/npm-debug.log
+/Front End Angular/yarn-error.log
+
+# IDEs and editors
+.idea/
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+/Front End Angular/.vscode/*
+/Front End Angular/!.vscode/settings.json
+/Front End Angular/!.vscode/tasks.json
+/Front End Angular/!.vscode/launch.json
+/Front End Angular/!.vscode/extensions.json
+/Front End Angular/.history/*
+
+# Miscellaneous
+/Front End Angular/.angular/cache
+/Front End Angular/.sass-cache/
+/Front End Angular/connect.lock
+/Front End Angular/coverage
+/Front End Angular/libpeerconnection.log
+/Front End Angular/testem.log
+/Front End Angular/typings
+
+# System files
+/Front End Angular/.DS_Store
+/Front End Angular/Thumbs.db

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="authenticator_service" />
+        <module name="job" />
+        <module name="JobSeeker" />
+        <module name="Employer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authenticator_service" target="11" />
+      <module name="Employer" target="11" />
+      <module name="job" target="11" />
+      <module name="JobSeeker" target="11" />
+      <module name="TopjobsParent" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Employer" options="-parameters" />
+      <module name="JobSeeker" options="-parameters" />
+      <module name="authenticator_service" options="-parameters" />
+      <module name="job" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Signup</title>
+</head>
+<body>
+    <main class="container">
+        <form class="form">
+            <h1>Join the Happy Crew</h1>
+            <h2>Get weekly ebike tips, news and discount!</h2>
+            <div class="form-group">
+                <label for="username">First Name<span class="star">*</span></label>
+                <input type="text"
+                       required
+                       class="form-input"
+                       name="username"
+                       id="username"
+                       autocomplete="off"/>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email<span class="star">*</span></label>
+                <input type="email"
+                       required
+                       minlength="6"
+                       class="form-input"
+                       name="email"
+                       id="email"/>
+            </div>
+
+            <div class="form-group-checkbox">
+                <label for="interest">What are you interested in?</label><br>
+                 <input type="checkbox"
+                       class="form-input-checkbox"
+                       name="interest"
+                       id="interest"
+                       value="cargo" />  Cargo<br>
+
+                <input type="checkbox"
+                       class="form-input-checkbox"
+                       name="interest"
+                       id="interest"
+                       value="commuter" />  Commuter<br>
+
+                <input type="checkbox"
+                       class="form-input-checkbox"
+                       name="interest"
+                       id="interest"
+                       value="touring" />  Touring
+            </div>
+            <button type="submit">Subscribe</button>
+
+            <hr>
+</body>
+</html>

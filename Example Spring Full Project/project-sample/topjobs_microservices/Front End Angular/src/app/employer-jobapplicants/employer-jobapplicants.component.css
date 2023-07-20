@@ -1,0 +1,41 @@
+.sectionclass{
+    margin-top: 40px;
+    
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.ButtonGroup {
+    width: 70%;
+    height: Auto;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.RouterGroup{
+    /* background-color: aquamarine; */
+    
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.button {
+    background-color: #1f2a38;
+    color: white;
+    width: auto;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+.selection{
+
+}

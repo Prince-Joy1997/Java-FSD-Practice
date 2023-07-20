@@ -1,0 +1,46 @@
+<div class="maindiv">
+    <mat-card class="card">Job Postings</mat-card>
+    <div class="clsShowJobsApplied" >
+        <mat-checkbox style="color: white;" (click)="onClickhideAppliedJobs()" [(ngModel)]="hideAppliedJobs">
+            Hide jobs that I've already applied to
+        </mat-checkbox>
+        <mat-form-field class="clsSearchBar">
+            <mat-label style="color: white;">Search...</mat-label>
+            <input matInput [(ngModel)]="searchText">
+        </mat-form-field>
+    </div>
+    <mat-accordion class="clsAccordian" multi="false" >
+        <mat-expansion-panel class="clsMatExpansionPanel" *ngFor="let jobItem of jobs | jobSeekerSearchPipe:searchText">
+            <mat-expansion-panel-header class="clsExpansionHeader">
+                <mat-panel-title>
+                    <mat-icon class="clsVerifiedUserIcon">verified_user</mat-icon>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    {{jobItem.title}}
+                </mat-panel-title>
+                <mat-panel-description class="right-aligned">
+                  
+                    <div class="clsEmployerID">
+                        <mat-icon>location_city</mat-icon>
+                        {{jobItem.employerId}}
+                    </div>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="clsLocation">
+                        <mat-icon> location_on</mat-icon>
+                        {{jobItem.location}}
+                    </div>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="clsJobInfo">
+                <p>
+                    {{jobItem.description}}
+                </p>
+                <p id="postedOn" >Posted on {{jobItem.postedDate}}</p>
+                <button mat-raised-button class="clsApplyButton" (click)="apply(jobItem.jobId)" [disabled]="hasAppliedJob(jobItem.jobId)">Apply</button>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <div class="clsFooter"></div>
+    
+</div>

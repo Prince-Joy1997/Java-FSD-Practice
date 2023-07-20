@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Karla:wght@400;700&family=League+Spartan:wght@500;600;700&family=Montserrat:wght@400;500;600&family=Mulish:wght@400;500;700&family=Noto+Sans:wght@800&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@400;600;900&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+main{
+  background-image: url("src/assets/background_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38rem;
+}
+
+.nav{
+  display: flex;
+  background-color: rgb(14, 14, 37);
+  padding: 1rem;
+}
+.left{
+  display: flex;
+  margin-left: 12px;
+  align-items: center;
+}
+
+.right{
+  display: flex;
+  margin-left: auto;
+  margin-right: 40px;
+  color: whitesmoke;
+}
+
+.logo{
+  font-family: 'Noto Sans', sans-serif;
+  color: rgb(60, 198, 232);
+}
+
+.details{
+  font-family: 'Noto Sans', sans-serif;
+  margin-left: 2rem;
+  margin-top: 6rem;
+  color: whitesmoke;
+  line-height: 3rem;
+  font-size: 22px;
+}
+
+li::marker{
+  color: rgb(60, 198, 232);
+}

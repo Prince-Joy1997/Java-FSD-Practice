@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+body{
+    background-image: url("/OpinionMaster/images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    margin: 5rem 12rem 0;
+    width: 70%;
+    height: 30vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading{
+    font-weight: 700;
+    line-height: 45px;
+    font-size: 39px;
+    color: rgb(69, 81, 103);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.content{
+    padding-bottom: 2rem;
+}
+
+button{
+    border: none;
+    padding: .7rem .7rem;
+    background-color: rgb(131, 193, 31);
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 18px;
+}

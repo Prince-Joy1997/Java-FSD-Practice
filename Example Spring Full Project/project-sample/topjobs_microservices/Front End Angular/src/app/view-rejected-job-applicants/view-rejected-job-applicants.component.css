@@ -1,0 +1,105 @@
+.cardsection{
+    width: 60%;
+    height: auto;
+    /* background-color: blue; */
+    margin-right: auto;
+    margin-left: auto; 
+
+}
+.expantionclass{
+  margin: 5px;
+}
+.matcard{
+    font-weight: 400;
+    background-color: #f2f2f2;
+    height: 70px;
+    width: auto;
+    margin:5px;
+}
+.button {
+    text-align: right;
+    margin-right: 10px;
+    background-color: #353D41;
+    color: white;
+    width: auto;
+    height: auto;
+  
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+
+
+.clsSearchBarDiv {
+  width: 60%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  
+}
+::ng-deep .mat-focused .mat-form-field-label {
+
+  /*change color of label*/
+  color: #1f2a38 !important;
+}
+
+::ng-deep .mat-form-field-underline {
+
+  /*change color of underline*/
+
+  background-color: #1f2a38 !important;;
+}
+::ng-deep .mat-form-field-ripple {
+
+  /*change color of underline when focused*/
+  background-color: #1f2a38 !important;
+
+}
+
+.clsSearchBar
+{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color : white
+}
+
+.card{
+  border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5;
+    width: 60%;
+    border: 2px solid #ddd;
+    margin-inline-start: 12rem;
+    margin-block-start: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: #1f2a38;
+    color: #ddd;
+}
+
+.maindiv{
+  height: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,68 @@
+<!-- --------------------------------------------------------------------------------------------------------------------------->
+<div class="maindiv">
+  <mat-card class="card">Selected Job Applicants</mat-card>
+
+  <div class="clsSearchBarDiv" >
+  
+    <mat-form-field class="clsSearchBar">
+  
+        <mat-label style="color: white;"> Search Applicant</mat-label>
+  
+        <input matInput [(ngModel)]="searchText">
+      
+    </mat-form-field>
+  
+  </div>
+  <!-- --------------------------------------------------------------------------------------------------------------------------->
+  <section class="cardsection" >
+      
+      <div *ngFor="let seeker of selectedList | jobapplicantpipe : searchText">
+       <!-- <mat-card  class="matcard">
+           
+           {{seeker.firstName}} &nbsp; {{seeker.lastName}} &nbsp; {{seeker.email}} &nbsp; {{seeker.phoneNumber}}
+           <div> <button class="button" mat-raised-button  style="float: right;">Reject</button>   
+            <button class="button" mat-raised-button  style="float: right;" >View Resume</button></div>
+        </mat-card> -->
+        
+        <mat-expansion-panel hideToggle class="expantionclass">
+           <mat-expansion-panel-header>
+             <div style="width: 100%;">
+              <mat-panel-title>
+                <mat-icon>perm_identity</mat-icon>  &nbsp;
+  
+                <div style="width: 250px;">
+                  {{seeker.firstName}} &nbsp;   {{seeker.lastName}} &nbsp;
+                </div>
+                <mat-icon>email</mat-icon>
+                <div style="width: 300px;">
+                  {{seeker.email}}
+                </div>
+                <mat-icon>home</mat-icon>
+                <div style="width: 300px;">
+                  {{seeker.address}}
+                </div> 
+                <mat-icon>phone</mat-icon>
+                <div style="width: 250px;">
+                  {{seeker.phoneNumber}}
+                </div>
+                  
+               </mat-panel-title>
+             </div>
+             <div>
+              <mat-panel-description >
+             
+               </mat-panel-description>
+             </div>
+            
+           </mat-expansion-panel-header>    
+           <mat-action-row>
+             <button mat-button color="warn" (click)="onViewResumeDialog(seeker)">ViewResume</button>
+             <button mat-button color="primary" (click)="OnReject(seeker.username)">Reject This Applicant</button>
+           </mat-action-row>
+         </mat-expansion-panel>
+      </div>
+   </section>
+   
+</div>
+
+ 

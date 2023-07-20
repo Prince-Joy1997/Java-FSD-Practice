@@ -1,0 +1,20 @@
+# Configuration file for gateway-service
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: authors-service
+          uri: http://localhost:8000/
+          predicates:
+            - Path=/library/**
+            - Method=GET,POST
+
+        - id: books-service
+          uri: http://localhost:8100/
+          predicates:
+            - Path=/library/**
+            - Method=GET,POST

@@ -1,0 +1,42 @@
+
+
+#logo {
+  width: 140px;
+}
+header, .navbar {
+  background-color: #1f2a38;
+}
+
+.GFG {
+  background-color: #232f3e;
+  border: 2px solid 232f3e;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 30px;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+#login {
+
+  background-color: #353D41;
+  color: white;
+
+}
+
+#logout {
+
+  background-color: #353D41;
+  color: white;
+
+}
+
+

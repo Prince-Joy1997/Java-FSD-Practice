@@ -1,0 +1,16 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: message-consumer
+  # RabbitMQ properties
+  rabbitmq:
+    host: ec2-34-230-59-140.compute-1.amazonaws.com
+    virtual-host: /
+    port: 8080
+    password: password
+    username: user
+    template:
+      exchange: simple-exchange-233693
+      default-receive-queue: simple-queue-233693
+      routing-key: simple-routing-key-233693

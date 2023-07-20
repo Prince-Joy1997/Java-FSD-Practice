@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(213, 236, 245);
+}
+#Logo{
+    background-image: url("/images/OIP.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+#Logo > h1,p{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-decoration: solid;
+    color: #b01515;
+    text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #292929, 0 4px 0 #434343,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+}
+
+#paralogo{
+    color: rgb(236, 12, 12);
+    text-shadow: 1px 1px 1px #ffffff;
+    
+}

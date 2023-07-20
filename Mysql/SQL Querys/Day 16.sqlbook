@@ -1,0 +1,91 @@
+-- SQLBook: Code
+select dept_name,dept_no,emp_no from departments JOIN dept_manager USING(dept_no);
+
+select title from titles limit 20;
+
+select emp_no 'Id',title 'Job',CONCAT_WS('-',first_name,last_name) 'Employee',DATE_FORMAT(from_date,'%W %D %M %Y') 'started On',DATE_FORMAT(to_date,'%W %D %M %Y') 'Ended At' from employees JOIN titles USING(emp_no);
+
+select emp_no 'Id',salary 'Salary',CONCAT_WS('-',first_name,last_name) 'Employee', DATE_FORMAT(from_date,'%W %D %M %Y') 'Paid From',DATE_FORMAT(to_date,'%W %D %M %Y') 'Paid Till' from employees JOIN salaries USING(emp_no);
+
+select e.emp_no 'Id',s.salary 'Salary',t.title 'Title',CONCAT_WS('-',e.first_name,e.last_name) 'Employee', DATE_FORMAT(s.from_date,'%W %D %M %Y') 'Paid From',DATE_FORMAT(s.to_date,'%W %D %M %Y') 'Paid Till',DATE_FORMAT(t.from_date,'%W %D %M %Y') 'started On',DATE_FORMAT(t.to_date,'%W %D %M %Y') 'Ended At' from employees e JOIN salaries s USING(emp_no) JOIN titles t USING(emp_no) LIMIT 20;
+
+
+CREATE DATABASE PVR;
+use pvr;
+
+CREATE table multiplex(multiplex_id INT PRIMARY KEY, address VARCHAR(150) NOT NULL,screen_count int NOT NULL, total_seating INT NOT NULL);
+DESC multiplex;
+
+CREATE Table movies(
+    movie_id INT PRIMARY KEY,
+    movie_name VARCHAR(50),
+    language VARCHAR(50),
+    rating VARCHAR(10)
+);
+
+CREATE Table screens(
+    screen_id int PRIMARY key,
+    multiplex_id int,
+    no_seats int,
+    no_seat_types int,FOREIGN KEY (multiplex_id) REFERENCES multiplex(multiplex_id)
+);
+
+create Table shows(
+    show_id int PRIMARY KEY,
+    screen_id int,
+    movie_id int,
+    show_date DATE,
+    show_time TIME,
+    Foreign Key (screen_id) REFERENCES screens(screen_id),
+    Foreign Key (movie_id) REFERENCES movies(movie_id)
+);
+
+CREATE Table screen_seats(
+    seat_id int primary key,
+    screen_id int,
+    seat_no int,
+    category VARCHAR(50),
+    price DECIMAL(5,4),
+    Foreign Key (screen_id) REFERENCES screens(screen_id)
+);
+
+CREATE table schedule(
+    schedule_id int,
+    show_id int,
+    seat_id int,
+    status ENUM('Booked','Available') NOT NULL,
+    Foreign Key (seat_id) REFERENCES screen_seats(seat_id)
+);
+
+CREATE Table screen_seat_type(
+     seat_type_id int PRIMARY KEY ,
+     screen_id int,
+     seat_type VARCHAR(50),
+     seat_count int,
+     Foreign Key (screen_id) REFERENCES screens(screen_id)
+     );
+
+desc screen_seats;
+
+
+ALTER TABLE screen_seats ADD CONSTRAINT category_CK CHECK (category IN ('gold','silver','platinum'));
+
+ALTER TABLE screen_seat_type ADD CONSTRAINT seat_type_CK CHECK (seat_type IN ('gold','silver','platinum'));
+
+show DATABASES;
+-- SQLBook: Code
+create DATABASE irctc;
+use irctc;
+
+create table station(station_id int PRIMARY KEY, station_name VARCHAR(30));
+
+create table train(train_id int PRIMARY KEY,train_name VARCHAR(30));
+
+create TABLE route(route_id int PRIMARY KEY, train_id int, origin_station_id int, destination_station_id int, distance DECIMAL, 
+FOREIGN KEY (train_id) REFERENCES train(train_id), 
+FOREIGN KEY (origin_station_id) REFERENCES station(station_id),
+FOREIGN KEY (destination_station_id) REFERENCES station(station_id));
+
+create table schedule(schedule_id int PRIMARY KEY, route_id int, departure_time TIME,arrival_time TIME,
+Foreign Key (route_id) REFERENCES route(route_id));
+

@@ -1,0 +1,142 @@
+<div class="maindiv">
+  <section class="clsmainsection">
+    <mat-card class="card">Job List</mat-card>
+    <p *ngIf="EmployerStatus == false" class="message">Thanks for creating an account! To activate your employer account,
+      please visit the TopJobs Office and pay the required fees. Once you pay the fees, your account will be activated within 24 hours!</p>
+
+
+      <mat-expansion-panel class="clsmat" *ngIf="EmployerStatus== true">
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Add New Job
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- <mat-icon>account_circle</mat-icon> -->
+              </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <!-- <input placeholder="enter name">
+          <input placeholder="enter age"> -->
+        <div class="clsform" style="width: 80%; text-align: center;" >
+            <form [formGroup]="jobpost" style=" width: 100%;">
+
+
+              <!-- <mat-form-field class="example-full-width">
+                  <mat-label>Enter Employer Id</mat-label>
+                  <input matInput formControlName="employerId">
+              </mat-form-field>  -->
+              <br>
+                <mat-form-field class="example-full-width">
+                    <mat-label id="jobTitle">Enter Job title</mat-label>
+                    <input id="jobTitleinput" matInput formControlName="title">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-full-width">
+                  <mat-label id="jobLocation">Enter Job location</mat-label>
+                  <input id="jobLocationinput" matInput formControlName="location">
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                  <mat-label id="jobDescription">Enter Job Description</mat-label>
+                  <textarea id="jobDescriptioninput" matInput formControlName="description"></textarea>
+              </mat-form-field>
+              <br>
+
+              <mat-form-field class="example-full-width">
+              <mat-label id="jobStatus">Status</mat-label>
+              <select matNativeControl required formControlName="status">
+                  <option id="jobValue"  value="open">Open</option>
+                  <option id="jobValue"  value="closed">Closed</option>
+              </select>
+              </mat-form-field>
+
+              <div class="example-button-container">
+
+                  <button id="jobBtn" mat-raised-button style="width: 70%;" class="btncolor" (click)="add()">Post Job</button>
+              </div>
+            </form>
+
+        </div>
+      </mat-expansion-panel>
+
+  </section>
+  <!-- --------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="clsSearchBarDiv" *ngIf="EmployerStatus== true">
+
+    <mat-form-field class="clsSearchBar">
+
+        <mat-label style="color: white;">Search Job</mat-label>
+
+        <input matInput [(ngModel)]="searchText">
+
+    </mat-form-field>
+
+  </div>
+
+  <!-- --------------------------------------------------------------------------------------------------------------------------->
+
+
+  <section *ngIf="EmployerStatus== true" class="empsection">
+    <div>
+      <table mat-table [dataSource]="joblist1 | employerjobpipe : searchText"  class="mat-elevation-z8" align="center">
+
+        <!-- Id Column -->
+        <ng-container matColumnDef="jobId">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.jobId}} </td>
+        </ng-container>
+
+        <!-- title Column -->
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef> Title </th>
+          <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+        </ng-container>
+       <!-- location Column -->
+        <ng-container matColumnDef="location">
+          <th mat-header-cell *matHeaderCellDef> Location </th>
+          <td mat-cell *matCellDef="let element"> {{element.location}} </td>
+        </ng-container>
+        <!-- DatePosted Column -->
+        <ng-container matColumnDef="postedDate">
+            <th mat-header-cell *matHeaderCellDef> PostedDate </th>
+            <td mat-cell *matCellDef="let element"> {{element.postedDate}} </td>
+          </ng-container>
+
+        <!-- status Column -->
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let element"><button mat-raised-button class="btncolor" (click)="onJobStatus(element)">{{element.status}}</button> </td>
+          </ng-container>
+          <!-- Edit-->
+          <ng-container matColumnDef="Edit">
+            <th mat-header-cell *matHeaderCellDef> Edit </th>
+            <td mat-cell *matCellDef="let element"><button mat-raised-button class="btncolor" (click)="openDialog(element)">Edit</button> </td>
+          </ng-container>
+          <!-- View Job Applicants -->
+          <ng-container matColumnDef="ViewApplicants">
+            <th mat-header-cell *matHeaderCellDef> ViewApplicants </th>
+            <td mat-cell *matCellDef="let element"><button mat-raised-button class="btncolor" (click)="OnViewApplicants(element.jobId)">ViewApplicants</button> </td>
+          </ng-container>
+          <!--Delete-->
+          <ng-container matColumnDef="Delete">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element"> <button mat-icon-button class="btncolor" (click)="onDeleteJob(element.jobId)">
+                <mat-icon aria-label="Example icon-button with a delete icon">delete</mat-icon>
+              </button> </td>
+          </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+
+  </section>
+
+</div>
+
+
+
+
+
